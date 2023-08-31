@@ -2,8 +2,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:normal": "next dev",
+    "dev:vercel": "NEXT_RUNTIME=edge NEXT_PRIVATE_MINIMAL_MODE=1 next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "start:normal": "next start",
+    "start:vercel": "NEXT_RUNTIME=edge NEXT_PRIVATE_MINIMAL_MODE=1 next start"
   },
   "dependencies": {
     "next": "canary",
